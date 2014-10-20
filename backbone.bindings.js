@@ -73,7 +73,7 @@
 		var el = entity[3], target = entity[1], attr = entity[2];
 
 		_.each(types, function (type) {
-			if(bindView) this.$(el).on('change', _.bind( Backbone.Bindings.getters[type], this, this[target], attr, this.$(el)));
+			if(bindView) this.$(el).on('input', _.bind( Backbone.Bindings.getters[type], this, this[target], attr, this.$(el)));
 			if(bindModel) this.listenTo(this[target], 'change:' + attr, _.bind( Backbone.Bindings.setters[type], this, this.$(el)));
 		}, this);
 	};
