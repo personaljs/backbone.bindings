@@ -25,3 +25,9 @@ Backbone.Bindings.getters служит для операций с DOM-элеме
     });
     
 Backbone.Bindings.setters нужен для операций с моделями и расширяется аналогично.
+
+    Backbone.Bindings.setters = _.extend(Backbone.Bindings.setters, {
+      custom : function (el, model, val) {
+        ...
+      }
+    });
