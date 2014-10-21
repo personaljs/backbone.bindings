@@ -15,3 +15,13 @@ Backbone.bindings
         this.checkBindings();
         ...
       }
+
+Backbone.Bindings.getters служит для операций с DOM-элементами и его можно расширять своими методами:
+
+    Backbone.Bindings.getters = _.extend(Backbone.Bindings.getters, {
+      custom : function (model, attr, el) {
+        ...
+      }
+    });
+    
+Backbone.Bindings.setters нужен для операций с моделями и расширяется аналогично.
