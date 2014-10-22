@@ -8,7 +8,7 @@ Backbone.bindings
         // Изменение свойства title в this.model изменяет значение элемента .title
         'model.title:>.title'			: 'value',
         // Полная привязка свойства модели к элементу
-        'model.title<>.title'			: 'value',
+        'model.title<>.title'			: 'value&text',
       },
       render: function() {
         ...
