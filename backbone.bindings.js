@@ -10,7 +10,6 @@
 		factory(root.$, root.Backbone, root._);
 	}
 })(this, function($, Backbone, _) {
-
 	var getters = {
 		value : function (model, attr, el) {
 			var value;
